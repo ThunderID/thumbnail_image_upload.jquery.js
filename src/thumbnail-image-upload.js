@@ -7,17 +7,19 @@
  */
 (function($){
 
-	 $.fn.thumbnail_upload = function( options ) {
+	 $.fn.thumbnail_image_upload = function( options ) {
 		var settings = $.extend({
 							width:"100%",
 							height:"100%",
 							text: "Upload Image Here",
+							bg: 'f5f5f5',
+							color: '00000'
 						}, options );
 		settings.text = settings.text.replace(" ", "+");
 
 		if (this.attr('data-img') === undefined || this.attr('data-img') == '')
 		{
-			settings.default = 'http://placehold.it/400&text='+settings.text;
+			settings.default = 'http://placehold.it/400/bg=' + settings.bg + '&color='+settings.color+'&text='+settings.text;
 		}
 		else
 		{

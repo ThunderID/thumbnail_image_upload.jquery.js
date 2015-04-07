@@ -12,13 +12,17 @@ Download the [production version][min] or the [development version][max].
 
 In your web page:
 
-```html
+```javascript
 <script src="jquery.js"></script>
-<script src="dist/thumbnail-image-upload.min.js"></script>
+<script src="thumbnail-image-upload.min.js"></script>
 <script>
-  jQuery(function ($) {
-    $.awesome(); // "awesome"
-  });
+	$('.thumbnail_image_upload').thumbnail_image_upload({
+		width:"100%",
+		height:"100%",
+		text: "Upload Image Here",
+		bg: 'f5f5f5',
+		color: '00000'
+	});
 </script>
 ```
 
