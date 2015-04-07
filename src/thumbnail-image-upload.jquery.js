@@ -19,7 +19,7 @@
 
 		if (this.attr('data-img') === undefined || this.attr('data-img') == '')
 		{
-			settings.default = 'http://placehold.it/400/' + settings.bg + '/'+settings.color+'?text='+settings.text;
+			settings.default = 'http://placehold.it/400/' + settings.bg + '/'+settings.color+'&text='+settings.text;
 		}
 		else
 		{
