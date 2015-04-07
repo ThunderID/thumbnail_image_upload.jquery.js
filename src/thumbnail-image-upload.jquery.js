@@ -41,7 +41,7 @@
 		});
 		
 		this.addClass('hidden');
-		$('<a href="javascript:;" class="thumbnail"><img data-src="#" src="'+settings.default+'" alt="" width="100%"></a>').insertAfter(this).bind('click', function(){
+		$('<a href="javascript:;" class="thumbnail"><img data-img="#" src="'+settings.default+'" alt="" width="'+settings.width+'" height="'+settings.height+'" ></a>').insertAfter(this).bind('click', function(){
 			obj.click();
 		});
 
